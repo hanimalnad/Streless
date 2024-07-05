@@ -31,7 +31,7 @@ def index():
         else:
             result = 'Low Stress'
         return render_template('index.html', result=result, questions=questions, enumerate=enumerate)
-    return render_template('index.html', questions=questions, enumerate=enumerate)
+    return render_template('home.html', questions=questions, enumerate=enumerate)
 
 if __name__ == '__main__':
     app.run(debug=True)
